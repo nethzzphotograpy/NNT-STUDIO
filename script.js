@@ -1,3 +1,19 @@
+
+// Live Sri Lanka date/time display
+(function(){
+  const dateEl=document.getElementById("liveDate");
+  const timeEl=document.getElementById("liveTime");
+  function updateNNTClock(){
+    const now=new Date();
+    const date=new Intl.DateTimeFormat("en-LK",{timeZone:"Asia/Colombo",weekday:"short",day:"2-digit",month:"short",year:"numeric"}).format(now);
+    const time=new Intl.DateTimeFormat("en-LK",{timeZone:"Asia/Colombo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:true}).format(now);
+    if(dateEl) dateEl.textContent=date;
+    if(timeEl) timeEl.textContent=time+" SLST";
+  }
+  updateNNTClock();
+  setInterval(updateNNTClock,1000);
+})();
+
 const nav=document.getElementById("nav"),menu=document.querySelector(".menu"),links=document.getElementById("links"),form=document.getElementById("bookingForm"),pkg=document.getElementById("package"),toast=document.getElementById("toast"),progress=document.getElementById("progress");
 window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",scrollY>25);progress.style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+"%"});
 menu.onclick=()=>links.classList.toggle("open");document.querySelectorAll("#links a").forEach(a=>a.onclick=()=>links.classList.remove("open"));

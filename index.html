@@ -9,8 +9,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.live-datetime{position:relative;z-index:1000;display:flex;justify-content:center;align-items:center;gap:.7rem;min-height:34px;padding:7px 14px;background:rgba(8,8,8,.92);border-bottom:1px solid rgba(212,180,112,.18);color:#eee;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.live-label{color:#d4b470;font-weight:700}.live-date,.live-time{white-space:nowrap}.live-sep{color:#d4b470}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.why-card{padding:30px;border:1px solid rgba(212,180,112,.18);border-radius:22px;background:rgba(255,255,255,.035);box-shadow:0 20px 50px rgba(0,0,0,.18);transition:transform .3s ease,border-color .3s ease}.why-card:hover{transform:translateY(-7px);border-color:rgba(212,180,112,.5)}.why-icon{font-size:.75rem;color:#d4b470;letter-spacing:.18em;margin-bottom:24px}.why-card h3{margin:0 0 12px}.why-card p{margin:0;line-height:1.7;opacity:.76}
+@media(max-width:700px){.live-datetime{font-size:.62rem;gap:.4rem;letter-spacing:.07em;overflow:hidden}.live-label{display:none}.why-grid{grid-template-columns:1fr;gap:14px}.why-card{padding:24px}}
+</style>
+
 </head>
 <body>
+<div class="live-datetime" aria-label="Current date and time">
+  <span class="live-label">NNT STUDIO</span>
+  <span class="live-date" id="liveDate">Loading date…</span>
+  <span class="live-sep">•</span>
+  <span class="live-time" id="liveTime">Loading time…</span>
+</div>
+
 <div class="noise"></div><div class="progress" id="progress"></div>
 <header class="nav" id="nav"><a class="logo" href="#home">NNT <i>/</i> STUDIO</a>
 <button class="menu" aria-label="Menu">☰</button>
@@ -71,6 +85,19 @@
     </div>
   </div>
 </section>
+<section class="section why-nnt" id="why-nnt">
+  <div class="section-kicker">WHY NNT STUDIO</div>
+  <div class="section-heading reveal">
+    <h2>Built around <span>you.</span></h2>
+    <p>Professional photography with a personal approach. No unnecessary extras, no confusing packages — just a shoot shaped around what you actually want.</p>
+  </div>
+  <div class="why-grid">
+    <article class="why-card reveal"><div class="why-icon">01</div><h3>NO HIDDEN CHARGES</h3><p>We keep our pricing clear and straightforward. What we discuss with you is what your booking is built around.</p></article>
+    <article class="why-card reveal"><div class="why-icon">02</div><h3>CLIENT FIRST</h3><p>Your ideas, comfort and vision come first. We listen to what you want and work with you to create the right shoot.</p></article>
+    <article class="why-card reveal"><div class="why-icon">03</div><h3>100% CUSTOMIZABLE</h3><p>Your session can be customized to your preferences, from the concept and location to the style and final photo requirements.</p></article>
+  </div>
+</section>
+
 <section class="section booking" id="booking"><div class="booking-grid"><div><div class="kicker">07 — RESERVE YOUR DATE</div><h2 class="display">Let's make<br><em>something unforgettable.</em></h2><p class="lead">Fill in your shoot details and choose how you'd like to send the request.</p><div class="steps"><p><b>01</b><span>FILL IN DETAILS<small>Your shoot information takes less than a minute.</small></span></p><p><b>02</b><span>CHOOSE WHATSAPP OR EMAIL<small>Your booking message is prepared automatically.</small></span></p><p><b>03</b><span>GET CONFIRMATION<small>NNT STUDIO confirms your final appointment.</small></span></p></div></div>
 <form id="bookingForm"><div class="formtitle">BOOKING REQUEST <span>01 / 01</span></div>
 <label>Full Name<input name="name" required placeholder="Your full name"></label>
