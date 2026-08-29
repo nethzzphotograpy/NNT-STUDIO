@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NNT STUDIO — premium photography sessions, portraits, events, groups and creative shoots in Sri Lanka.">
+<title>NNT STUDIO — Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a1"></div><div class="ambient a2"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">NNT <span>/</span> STUDIO</a>
+  <button class="menu" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="navLinks">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#packages">Packages</a><a href="#booking">Book</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-lines"></div>
+  <div class="hero-content reveal">
+    <p class="eyebrow">NNT STUDIO · SRI LANKA</p>
+    <h1>Moments.<br><em>Made timeless.</em></h1>
+    <p class="hero-text">Professional photography with a clean, cinematic feel. Portraits, events, groups and creative sessions — made to look and feel unforgettable.</p>
+    <div class="actions">
+      <a class="btn primary" href="#booking">Book a Shoot <b>↗</b></a>
+      <a class="btn secondary" href="#packages">Explore Packages <b>↓</b></a>
+    </div>
+  </div>
+  <div class="hero-bottom"><span>EST. 2026</span><span>PORTRAITS · EVENTS · CREATIVE</span><span>SCROLL ↓</span></div>
+</section>
+
+<section class="about section" id="about">
+  <div class="kicker reveal">01 — NNT STUDIO</div>
+  <div class="about-grid">
+    <h2 class="display reveal">Your story.<br><em>Our frame.</em></h2>
+    <div class="about-copy reveal">
+      <p>NNT STUDIO creates polished photography that feels natural, modern and cinematic. Every session is planned around you — from the first frame to the final edit.</p>
+      <div class="stats"><div><strong>4</strong><span>SESSION TYPES</span></div><div><strong>100+</strong><span>EDITED FRAMES</span></div><div><strong>1:1</strong><span>PERSONAL SERVICE</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="packages section" id="packages">
+  <div class="kicker reveal">02 — PACKAGES</div>
+  <div class="package-heading">
+    <h2 class="display reveal">Pick your<br><em>session.</em></h2>
+    <p class="reveal">Straightforward packages designed for portraits, celebrations, creative shoots and everything in between.</p>
+  </div>
+  <div class="cards">
+    <article class="card reveal">
+      <div class="top"><span>01</span><i class="green"></i></div><h3>BASIC</h3>
+      <div class="price">Rs. 2,000 <small>– 2,500</small></div><div class="duration">30–45 MINUTES</div>
+      <ul><li>30 edited photos</li><li>Professional editing</li><li>Colour grading</li><li>Digital delivery</li></ul>
+      <button class="choose" data-package="Basic">Choose Basic <b>→</b></button>
+    </article>
+    <article class="card featured reveal"><label>MOST POPULAR</label>
+      <div class="top"><span>02</span><i class="blue"></i></div><h3>STANDARD</h3>
+      <div class="price">Rs. 3,000 <small>– 4,000</small></div><div class="duration">APPROX. 1 HOUR</div>
+      <ul><li>50 edited photos</li><li>Professional editing</li><li>Colour grading</li><li>Digital delivery</li></ul>
+      <button class="choose" data-package="Standard">Choose Standard <b>→</b></button>
+    </article>
+    <article class="card reveal">
+      <div class="top"><span>03</span><i class="red"></i></div><h3>PREMIUM</h3>
+      <div class="price">Rs. 5,000 <small>– 7,000</small></div><div class="duration">1.5–2 HOURS</div>
+      <ul><li>80–100 edited photos</li><li>Professional editing</li><li>Colour grading</li><li>Digital delivery</li></ul>
+      <button class="choose" data-package="Premium">Choose Premium <b>→</b></button>
+    </article>
+    <article class="card reveal">
+      <div class="top"><span>04</span><i class="gold"></i></div><h3>EVENT / GROUP</h3>
+      <div class="price">Rs. 7,000 <small>– 12,000+</small></div><div class="duration">2–3 HOURS</div>
+      <ul><li>Lots of edited photos</li><li>Event coverage</li><li>Professional editing</li><li>Digital delivery</li></ul>
+      <button class="choose" data-package="Event / Group">Choose Event / Group <b>→</b></button>
+    </article>
+  </div>
+</section>
+
+<section class="booking section" id="booking">
+  <div class="booking-layout">
+    <div class="booking-info reveal">
+      <div class="kicker">03 — BOOKING</div>
+      <h2 class="display">Let's create<br><em>your next frame.</em></h2>
+      <p>Fill in your shoot details and choose how you want to contact NNT STUDIO. Your message will be prepared automatically.</p>
+      <div class="method-note"><span>FAST & EASY</span><strong>WhatsApp or Email</strong><small>No account or complicated booking system required.</small></div>
+    </div>
+    <form id="bookingForm" class="form reveal">
+      <div class="field"><label>Full Name</label><input name="name" required placeholder="Your full name"></div>
+      <div class="field"><label>Phone Number</label><input name="phone" required type="tel" placeholder="+94 7X XXX XXXX"></div>
+      <div class="field"><label>Choose Package</label><select name="package" id="packageSelect" required><option value="" selected disabled>Select your package</option><option>Basic</option><option>Standard</option><option>Premium</option><option>Event / Group</option></select></div>
+      <div class="two">
+        <div class="field"><label>Preferred Date</label><input name="date" required type="date"></div>
+        <div class="field"><label>Preferred Time</label><input name="time" required type="time"></div>
+      </div>
+      <div class="field"><label>Location</label><input name="location" required placeholder="Where would you like the shoot?"></div>
+      <div class="field"><label>Additional Message</label><textarea name="message" rows="4" placeholder="Anything else NNT STUDIO should know?"></textarea></div>
+      <fieldset><legend>HOW WOULD YOU LIKE TO SEND YOUR BOOKING?</legend>
+        <div class="methods">
+          <label><input type="radio" name="method" value="whatsapp" checked><span>🟢 WhatsApp</span></label>
+          <label><input type="radio" name="method" value="email"><span>📧 Email</span></label>
+        </div>
+      </fieldset>
+      <button class="btn primary submit" type="submit">Prepare Booking <b>↗</b></button>
+      <p class="fine">Your selected WhatsApp or email composer will open with your details prepared. Your appointment is confirmed only after NNT STUDIO confirms your request.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="kicker reveal">04 — CONTACT</div>
+  <div class="contact-grid">
+    <div class="reveal"><h2 class="display">Ready when<br><em>you are.</em></h2></div>
+    <div class="contact-details reveal">
+      <a href="https://wa.me/94741692115" target="_blank" rel="noopener"><span>WHATSAPP</span><strong>+94 74 169 2115</strong><b>↗</b></a>
+      <a href="mailto:tharulamarasinghe16@gmail.com"><span>EMAIL</span><strong>tharulamarasinghe16@gmail.com</strong><b>↗</b></a>
+      <div class="availability"><span>LOCATION</span><strong>SRI LANKA</strong></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><a href="#home" class="logo">NNT <span>/</span> STUDIO</a><span>© 2026 NNT STUDIO</span><span>CAPTURED WITH INTENT.</span></footer>
+<div class="toast" id="toast"><strong>Booking request prepared ✓</strong><span>Your selected contact method should now be open.</span></div>
+<script src="script.js"></script>
+</body>
+</html>
