@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#080807">
 <title>NNT STUDIO — Make It Timeless</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@500;600&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
 .live-datetime{position:relative;z-index:1000;display:flex;justify-content:center;align-items:center;gap:.7rem;min-height:34px;padding:7px 14px;background:rgba(8,8,8,.92);border-bottom:1px solid rgba(212,180,112,.18);color:#eee;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
@@ -18,6 +18,7 @@
 
 </head>
 <body>
+<div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div><div class="page-loader" aria-hidden="true"><span>NNT</span><i></i></div>
 <div class="live-datetime" aria-label="Current date and time">
   <span class="live-label">NNT STUDIO</span>
   <span class="live-date" id="liveDate">Loading date…</span>
@@ -49,9 +50,9 @@
 <div class="features"><div><b>01</b><strong>DIRECTED</strong><span>Natural posing and creative guidance.</span></div><div><b>02</b><strong>CINEMATIC</strong><span>Intentional framing, lighting and colour.</span></div><div><b>03</b><strong>EDITED</strong><span>Every delivered frame professionally finished.</span></div></div></div></div></section>
 
 <section class="section shoot-types"><div class="kicker">02 — WHAT WE SHOOT</div><div class="type-grid">
-<button class="type-card reveal" data-p="Basic"><span>01</span><strong>PORTRAITS</strong><small>Personal portraits with confident, natural direction.</small><i>↗</i></button>
-<button class="type-card reveal" data-p="Standard"><span>02</span><strong>COUPLES</strong><small>Relaxed frames that feel like you, not a pose.</small><i>↗</i></button>
-<button class="type-card reveal" data-p="Standard"><span>03</span><strong>GROUPS</strong><small>Big energy, clean composition and memorable moments.</small><i>↗</i></button>
+<button class="type-card reveal" data-p="Essential"><span>01</span><strong>PORTRAITS</strong><small>Personal portraits with confident, natural direction.</small><i>↗</i></button>
+<button class="type-card reveal" data-p="Signature"><span>02</span><strong>COUPLES</strong><small>Relaxed frames that feel like you, not a pose.</small><i>↗</i></button>
+<button class="type-card reveal" data-p="Signature"><span>03</span><strong>GROUPS</strong><small>Big energy, clean composition and memorable moments.</small><i>↗</i></button>
 <button class="type-card reveal" data-p="Birthday"><span>04</span><strong>BIRTHDAYS</strong><small>Celebrate your day with fun, polished and memorable frames.</small><i>↗</i></button>
 <button class="type-card reveal" data-p="Events"><span>05</span><strong>EVENTS</strong><small>Coverage that tells the whole story from start to finish.</small><i>↗</i></button>
 </div></section>
@@ -59,10 +60,10 @@
 <section class="section packages" id="packages"><div class="kicker">03 — PACKAGES</div>
 <div class="package-top"><h2 class="display reveal">Your moment.<br><em>Your package.</em></h2><p>Choose your level, then customize the details when you book.</p></div>
 <div class="cards">
-<article class="card reveal"><div class="head">01 <i class="green"></i></div><h3>BASIC</h3><div class="price">Rs. 3,500 <small>– 4,000</small></div><div class="duration">SHORT & SIMPLE</div><div class="count"><b>25</b> EDITED PHOTOS</div><ul><li>Professional editing</li><li>Colour grading</li><li>Creative direction</li><li>Digital delivery</li></ul><button class="choose" data-p="Basic">Book Basic →</button></article>
-<article class="card featured reveal"><label>MOST POPULAR</label><div class="head">02 <i class="blue"></i></div><h3>STANDARD</h3><div class="price">Rs. 4,000 <small>– 5,000</small></div><div class="duration">THE FULL EXPERIENCE</div><div class="count"><b>40</b> EDITED PHOTOS</div><ul><li>Professional editing</li><li>Colour grading</li><li>Creative direction</li><li>Digital delivery</li></ul><button class="choose" data-p="Standard">Book Standard →</button></article>
-<article class="card reveal"><div class="head">03 <i class="red"></i></div><h3>PREMIUM</h3><div class="price">Rs. 5,000 <small>– 6,000</small></div><div class="duration">MORE TIME · MORE FRAMES</div><div class="count"><b>60</b> EDITED PHOTOS</div><ul><li>Professional editing</li><li>Colour grading</li><li>Creative direction</li><li>Digital delivery</li></ul><button class="choose" data-p="Premium">Book Premium →</button></article>
-<article class="card reveal"><div class="head">04 <i class="gold"></i></div><h3>BIRTHDAYS</h3><div class="price">Rs. 6,000 <small>– 12,000</small></div><div class="duration">FLEXIBLE COVERAGE</div><div class="count"><b>FLEX</b> EDITED PHOTOS</div><ul><li>Photo count based on your needs</li><li>Professional editing</li><li>Colour grading</li><li>Digital delivery</li></ul><button class="choose" data-p="Birthday">Book Birthday →</button></article><article class="card reveal"><div class="head">05 <i class="gold"></i></div><h3>EVENTS</h3><div class="price">Rs. 10,000 <small>– 15,000</small></div><div class="duration">FULL EVENT COVERAGE</div><div class="count"><b>LOTS</b> EDITED PHOTOS</div><ul><li>Event & group coverage</li><li>Professional editing</li><li>Colour grading</li><li>Digital delivery</li></ul><button class="choose" data-p="Events">Book Events →</button></article>
+<article class="card reveal"><div class="head">01 <i class="green"></i></div><h3>ESSENTIAL</h3><div class="price">Rs. 3,500 <small>– 4,500</small></div><div class="duration">SHORT & SIMPLE</div><div class="count"><b>25</b> EDITED PHOTOS</div><ul><li>Professional editing</li><li>Colour grading</li><li>Creative direction</li><li>Digital delivery</li></ul><button class="choose" data-p="Essential">Book Essential →</button></article>
+<article class="card featured reveal"><label>MOST POPULAR</label><div class="head">02 <i class="blue"></i></div><h3>SIGNATURE</h3><div class="price">Rs. 4,500 <small>– 5,500</small></div><div class="duration">THE FULL EXPERIENCE</div><div class="count"><b>45</b> EDITED PHOTOS</div><ul><li>Professional editing</li><li>Colour grading</li><li>Creative direction</li><li>Digital delivery</li></ul><button class="choose" data-p="Signature">Book Signature →</button></article>
+<article class="card reveal"><div class="head">03 <i class="red"></i></div><h3>PREMIUM</h3><div class="price">Rs. 5,500 <small>– 6,500</small></div><div class="duration">MORE TIME · MORE FRAMES</div><div class="count"><b>55</b> EDITED PHOTOS</div><ul><li>Professional editing</li><li>Colour grading</li><li>Creative direction</li><li>Digital delivery</li></ul><button class="choose" data-p="Premium">Book Premium →</button></article>
+<article class="card reveal"><div class="head">04 <i class="gold"></i></div><h3>BIRTHDAYS</h3><div class="price">Rs. 6,500 <small>– 12,500</small></div><div class="duration">FLEXIBLE COVERAGE</div><div class="count"><b>FLEX</b> EDITED PHOTOS</div><ul><li>Photo count based on event time</li><li>Professional editing</li><li>Colour grading</li><li>Digital delivery</li></ul><button class="choose" data-p="Birthday">Book Birthday →</button></article><article class="card reveal"><div class="head">05 <i class="gold"></i></div><h3>EVENTS</h3><div class="price">Rs. 10,000 <small>– 15,000</small></div><div class="duration">FULL EVENT COVERAGE</div><div class="count"><b>TIME-BASED</b> EDITED PHOTOS</div><ul><li>Photo count based on event time</li><li>Professional editing</li><li>Colour grading</li><li>Digital delivery</li></ul><button class="choose" data-p="Events">Book Events →</button></article>
 </div><p class="custom">Need something custom? <a href="#booking">Tell us what you have in mind →</a></p></section>
 
 <section class="section work" id="work"><div class="kicker">04 — WHY NNT STUDIO</div><div class="why-grid">
@@ -101,7 +102,7 @@
 <section class="section booking" id="booking"><div class="booking-grid"><div><div class="kicker">07 — RESERVE YOUR DATE</div><h2 class="display">Let's make<br><em>something unforgettable.</em></h2><p class="lead">Fill in your shoot details and choose how you'd like to send the request.</p><div class="steps"><p><b>01</b><span>FILL IN DETAILS<small>Your shoot information takes less than a minute.</small></span></p><p><b>02</b><span>CHOOSE WHATSAPP OR EMAIL<small>Your booking message is prepared automatically.</small></span></p><p><b>03</b><span>GET CONFIRMATION<small>NNT STUDIO confirms your final appointment.</small></span></p></div></div>
 <form id="bookingForm"><div class="formtitle">BOOKING REQUEST <span>01 / 01</span></div>
 <label>Full Name<input name="name" required placeholder="Your full name"></label>
-<div class="row"><label>Phone<input name="phone" required type="tel" placeholder="+94 7X XXX XXXX"></label><label>Package<select name="package" id="package" required><option value="" disabled selected>Select package</option><option>Basic</option><option>Standard</option><option>Premium</option><option>Birthday</option><option>Events</option></select></label></div>
+<div class="row"><label>Phone<input name="phone" required type="tel" placeholder="+94 7X XXX XXXX"></label><label>Package<select name="package" id="package" required><option value="" disabled selected>Select package</option><option>Essential</option><option>Signature</option><option>Premium</option><option>Birthday</option><option>Events</option></select></label></div>
 <div class="row"><label>Date<input name="date" required type="date"></label><label>Time<input name="time" required type="time"></label></div>
 <label>Location<input name="location" required placeholder="Where should we shoot?"></label>
 <label>Additional Message<textarea name="message" rows="4" placeholder="Tell us about your idea or event..."></textarea></label>
