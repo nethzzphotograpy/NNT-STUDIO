@@ -107,3 +107,9 @@ body.intro-lock{overflow:hidden}
 @media(max-width:560px){
   .price span{white-space:normal}
 }
+
+/* Keep all four Why NNT reasons in the first row on desktop */
+.why-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+@media(max-width:1050px){.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.why-grid{grid-template-columns:1fr}}
