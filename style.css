@@ -113,3 +113,29 @@ body.intro-lock{overflow:hidden}
 
 @media(max-width:1050px){.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.why-grid{grid-template-columns:1fr}}
+
+/* 48-hour Why NNT reason — placed directly under the team Instagram links */
+.team-delivery{
+  margin-top:28px;
+  padding:24px 0 0;
+  border-top:1px solid rgba(255,255,255,.10);
+  max-width:720px;
+}
+.team-delivery-no{
+  display:block;
+  margin-bottom:10px;
+  font:10px "DM Sans",sans-serif;
+  letter-spacing:.18em;
+  color:#9a9a9a;
+}
+.team-delivery h3{
+  margin:0 0 9px;
+  font:22px "Playfair Display",serif;
+  letter-spacing:.02em;
+}
+.team-delivery p{
+  margin:0;
+  color:#aaa;
+  font-size:13px;
+  line-height:1.7;
+}
