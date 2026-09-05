@@ -114,14 +114,14 @@ body.intro-lock{overflow:hidden}
 @media(max-width:1050px){.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.why-grid{grid-template-columns:1fr}}
 
-/* 48-hour Why NNT reason — placed directly under the team Instagram links */
+/* Why NNT reason — directly under the team Instagram links */
 .team-delivery{
   margin-top:28px;
   padding:24px 0 0;
   border-top:1px solid rgba(255,255,255,.10);
   max-width:720px;
 }
-.team-delivery-no{
+.team-delivery-kicker{
   display:block;
   margin-bottom:10px;
   font:10px "DM Sans",sans-serif;
@@ -138,4 +138,59 @@ body.intro-lock{overflow:hidden}
   color:#aaa;
   font-size:13px;
   line-height:1.7;
+}
+/* Why NNT Studio — unified card section */
+.why-nnt .section-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+.why-nnt .section-intro{
+  margin-bottom:34px;
+}
+.why-nnt .why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:13px;
+}
+.why-nnt .why-card{
+  position:relative;
+  min-height:250px;
+  padding:38px 40px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:28px;
+  background:rgba(255,255,255,.018);
+  overflow:hidden;
+  transition:transform .35s ease,border-color .35s ease,background .35s ease;
+}
+.why-nnt .why-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(190,155,82,.48);
+  background:rgba(255,255,255,.028);
+}
+.why-nnt .why-icon{
+  margin-bottom:38px;
+  font:11px "DM Sans",sans-serif;
+  letter-spacing:.18em;
+  color:#b99a5a;
+}
+.why-nnt .why-card h3{
+  margin:0 0 18px;
+  font:24px "Playfair Display",serif;
+  font-weight:400;
+}
+.why-nnt .why-card p{
+  margin:0;
+  max-width:420px;
+  color:#999;
+  font-size:13px;
+  line-height:1.8;
+}
+@media(max-width:1050px){
+  .why-nnt .why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+  .why-nnt .why-grid{grid-template-columns:1fr}
+  .why-nnt .why-card{padding:30px;min-height:220px}
 }
