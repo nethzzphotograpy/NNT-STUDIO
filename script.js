@@ -27,20 +27,20 @@ const messages=document.getElementById("messages"),question=document.getElementB
 function answer(q){
   const raw=q.trim(), x=raw.toLowerCase();
   const packages={
-    personal:["Personal","Rs. 5,000–10,000","personal portraits"],
-    customized:["Customized Shoots","Rs. 6,000–12,000","a fully personalized session"],
-    couples:["Couples","Rs. 8,000–12,000","couples photography"],
-    events:["Events","Rs. 10,000–15,000","event coverage"],
-    birthday:["Birthday Shoots","Rs. 10,000–16,000","birthday photography"]
+    personal:["Personal","Starting from Rs. 5,000","personal portraits"],
+    customized:["Customized Shoots","Starting from Rs. 6,000","a fully personalized session"],
+    couples:["Couples","Starting from Rs. 8,000","couples photography"],
+    events:["Events","Starting from Rs. 10,000","event coverage"],
+    birthday:["Birthday Shoots","Starting from Rs. 10,000","birthday photography"]
   };
   if(/instagram|insta|ig/.test(x)) return "You can find Nethmin on My Personal Instagram: @nethminnnn_.";
   if(/who|about nnt|about you|photographer|nethmin/.test(x)) return "NNT STUDIO is a Sri Lankan photography studio led by Nethmin Amarasinghe — a new and experienced photographer focused on natural, creative and cinematic photography with a client-first approach.";
-  if(/custom|customi|unique|my own idea/.test(x)) return "Customized Shoots are Rs. 6,000–12,000. They are built around your concept, location, style and requirements. You can explain exactly what you want in the booking form.";
-  if(/birthday/.test(x)) return "Birthday Shoots are Rs. 10,000–16,000. The session is shaped around your celebration, location and preferred style.";
-  if(/event|party|function|coverage/.test(x)) return "Events are Rs. 10,000–15,000 and are designed around the event, venue, schedule and coverage you need.";
-  if(/couple|relationship|two of us|partner/.test(x)) return "The Couples package is Rs. 8,000–12,000, with natural posing guidance, professional editing, colour grading and digital delivery.";
-  if(/personal|portrait|solo|profile/.test(x)) return "The Personal package is Rs. 5,000–10,000 and is designed for portraits with creative direction, professional editing, colour grading and digital delivery.";
-  if(/price|cost|how much|pricing|all package|packages/.test(x)) return "Current NNT STUDIO pricing: Personal Rs. 5,000–10,000 · Customized Shoots Rs. 6,000–12,000 · Couples Rs. 8,000–12,000 · Events Rs. 10,000–15,000 · Birthday Shoots Rs. 10,000–16,000. No photo-count limits are displayed on the packages; the session can be discussed around your needs.";
+  if(/custom|customi|unique|my own idea/.test(x)) return "Customized Shoots are Starting from Rs. 6,000. They are built around your concept, location, style and requirements. You can explain exactly what you want in the booking form.";
+  if(/birthday/.test(x)) return "Birthday Shoots are Starting from Rs. 10,000. The session is shaped around your celebration, location and preferred style.";
+  if(/event|party|function|coverage/.test(x)) return "Events are Starting from Rs. 10,000 and are designed around the event, venue, schedule and coverage you need.";
+  if(/couple|relationship|two of us|partner/.test(x)) return "The Couples package is Starting from Rs. 8,000, with natural posing guidance, professional editing, colour grading and digital delivery.";
+  if(/personal|portrait|solo|profile/.test(x)) return "The Personal package is Starting from Rs. 5,000 and is designed for portraits with creative direction, professional editing, colour grading and digital delivery.";
+  if(/price|cost|how much|pricing|all package|packages/.test(x)) return "Current NNT STUDIO pricing: Personal Starting from Rs. 5,000 · Customized Shoots Starting from Rs. 6,000 · Couples Starting from Rs. 8,000 · Events Starting from Rs. 10,000 · Birthday Shoots Starting from Rs. 10,000. No photo-count limits are displayed on the packages; the session can be discussed around your needs.";
   if(/best|recommend|which.*package|what.*choose|suggest/.test(x)) return "It depends on your shoot: Personal for solo portraits, Customized Shoots for a unique concept, Couples for two people, Birthday Shoots for birthday sessions, and Events for event coverage. Tell me what you're planning and I can narrow it down.";
   if(/book|booking|reserve|appointment|date|whatsapp|email/.test(x)) return "To book, fill in your name, phone, package, preferred date/time, location and message. Then choose WhatsApp or Email. The website prepares the message automatically; NNT STUDIO confirms the final appointment.";
   if(/bring|wear|outfit|prepare|preparation/.test(x)) return "Bring outfits you feel confident in, useful personal items for your concept, and any reference ideas you like. For events, include the venue, schedule and important moments in your booking message.";

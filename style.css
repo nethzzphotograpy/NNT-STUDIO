@@ -42,3 +42,68 @@ body.intro-lock{overflow:hidden}
 
 /* NNT v13 package presentation */
 .card h3{min-height:20px}.card .duration{min-height:14px}.card ul{margin-top:22px}.cards{align-items:stretch}
+
+/* NNT STUDIO team credits */
+.team-credits{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin-top:34px;
+}
+.team-person{
+  padding:24px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.025);
+  transition:transform .35s ease,border-color .35s ease,background .35s ease;
+}
+.team-person:hover{
+  transform:translateY(-5px);
+  border-color:rgba(255,255,255,.22);
+  background:rgba(255,255,255,.045);
+}
+.team-role{
+  display:block;
+  font:10px "DM Sans",sans-serif;
+  letter-spacing:.18em;
+  color:#999;
+  margin-bottom:10px;
+}
+.team-person h3{
+  margin:0 0 10px;
+  font:22px "Playfair Display",serif;
+}
+.team-person a{
+  color:#bbb;
+  text-decoration:none;
+  font-size:12px;
+}
+.team-person a:hover{color:#fff}
+@media(max-width:650px){
+  .team-credits{grid-template-columns:1fr}
+}
+/* Extra Why NNT card */
+.why-card{
+  padding:26px;
+}
+.why-card .why-no{
+  display:block;
+  font:10px "DM Sans",sans-serif;
+  letter-spacing:.18em;
+  color:#888;
+  margin-bottom:16px;
+}
+.why-card h3{
+  margin:0 0 10px;
+  font:20px "Playfair Display",serif;
+}
+.why-card p{
+  margin:0;
+  color:#aaa;
+  line-height:1.7;
+  font-size:13px;
+}
+/* Keep starting prices on one line where possible */
+.price span{white-space:nowrap}
+@media(max-width:560px){
+  .price span{white-space:normal}
+}
