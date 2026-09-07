@@ -216,3 +216,8 @@ body.intro-lock{overflow:hidden}
     background-position:62% center !important;
   }
 }
+
+/* Supplied hero image: keep existing hero text/staff, remove decorative circles that were covering it. */
+.hero .rings,.hero .hero-glow,.hero .hero-stamp,.hero .hero-side,.hero .hero-meta,.hero .hero-scroll-ring{display:none !important}
+.hero{background:#080807 url("nnt-hero-background.jpg") center center / cover no-repeat !important}
+@media(max-width:800px){.hero{background-position:62% center !important}}
