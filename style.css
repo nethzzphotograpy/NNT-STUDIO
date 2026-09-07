@@ -209,7 +209,7 @@ body.intro-lock{overflow:hidden}
 
 /* NNT STUDIO — HERO BACKGROUND ONLY */
 .hero{
-  background:#080807 url("nnt-hero-background.png") center center / cover no-repeat !important;
+  background:#080807 url("nnt-hero-background.jpg") center center / cover no-repeat !important;
 }
 @media (max-width:800px){
   .hero{
